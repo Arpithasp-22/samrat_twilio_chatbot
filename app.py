@@ -1,24 +1,46 @@
 from flask import Flask, request
-from dotenv import load_dotenv
 from twilio.twiml.messaging_response import MessagingResponse
-from bot import setup_bot, search_answer
+from dotenv import load_dotenv
+import os
+
+from bot import setup_bot, handle_message
 
 load_dotenv()
 
 app = Flask(__name__)
-
-setup_bot()  # load CSV once
-
+setup_bot()
 
 @app.route("/whatsapp", methods=["POST"])
 def whatsapp_reply():
-    user_msg = request.values.get("Body", "").strip()
-    print("📩 Incoming:", user_msg)
+    """
+    Main Twilio webhook
+    Handles:
+    - Text messages
+    - WhatsApp button/list replies
+    """
 
-    answer = search_answer(user_msg)
+    incoming_text = request.values.get("Body", "").strip()
+    button_payload = request.values.get("ListReplyId") or request.values.get("ButtonPayload")
+
+    # Priority: button payload > text
+    user_input = button_payload if button_payload else incoming_text
+
+    response_text, interactive = handle_message(user_input)
 
     resp = MessagingResponse()
-    resp.message(answer)
+
+    if interactive:
+        # Send WhatsApp LIST MESSAGE
+        msg = resp.message()
+        msg.body(interactive["body"])
+
+        msg.list(
+            interactive["button"],
+            interactive["sections"]
+        )
+    else:
+        resp.message(response_text)
+
     return str(resp)
 
 
