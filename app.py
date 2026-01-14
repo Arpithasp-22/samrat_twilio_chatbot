@@ -1,3 +1,7 @@
+'''Flask application that acts as the webhook endpoint for the Twilio WhatsApp chatbot.
+It receives incoming WhatsApp messages, forwards them to the bot logic, and returns
+the generated responses back to the user via Twilio.'''
+
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 from dotenv import load_dotenv
