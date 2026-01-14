@@ -1,3 +1,18 @@
+"""
+bot.py
+------
+Core chatbot logic for the WhatsApp sales analytics bot.
+This module processes user queries, interacts with the Gemini LLM,
+executes SQL queries on the SQLite database, and formats responses.
+
+Main responsibilities:
+- Parse user intent
+- Generate SQL queries using Gemini
+- Fetch insights from SQLite sales database
+- Return human-readable analytics responses
+"""
+
+
 import sqlite3
 import pandas as pd
 import re
