@@ -1,0 +1,13 @@
+# secrets
+.env
+
+# data
+data/*.csv
+data/*.db
+
+# python
+__pycache__/
+*.pyc
+
+# node
+node_modules/
