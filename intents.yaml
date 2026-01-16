@@ -1,0 +1,137 @@
+SNAPSHOT:
+  exact:
+    - "1"
+    - "dealer snapshot"
+  keywords:
+    - "snapshot"
+    - "dealer"
+    - "dealer performance"
+    - "check dealer"
+  phrases:
+    - "tell me about"
+    - "dealer info"
+    - "check dealer"
+  regex:
+    - "dealer\\s+(\\w+)"
+    - "check\\s+(\\w+)"
+
+COMPARE:
+  exact:
+    - "2"
+    - "compare dealers"
+  keywords:
+    - "compare"
+    - "vs"
+    - "versus"
+    - "comparison"
+  phrases:
+    - "compare with"
+    - "dealer vs"
+    - "compare dealers"
+  regex:
+    - "(\\w+)\\s+vs\\.?\\s+(\\w+)"
+    - "compare\\s+(.+?)\\s+(?:and|with)\\s+(.+?)"
+
+TOP_DEALERS:
+  exact:
+    - "3"
+    - "top dealers"
+  keywords:
+    - "top dealers"
+    - "best dealers"
+    - "leading dealers"
+  phrases:
+    - "top dealers"
+    - "top performers"
+    - "best dealers by sales"
+  regex:
+    - "^top\\s+\\d+\\s+dealers"
+    - "^best\\s+\\d+\\s+dealers"
+
+STATE:
+  exact:
+    - "4"
+    - "sales by state"
+  keywords:
+    - "state"
+    - "territory"
+    - "region"
+    - "state-wise"
+  phrases:
+    - "state wise"
+    - "sales by state"
+    - "state breakdown"
+  regex:
+    - "sales\\s+by\\s+state"
+    - "state\\s+wise"
+    - "in\\s+(\\w+)"
+
+PRODUCT:
+  exact:
+    - "5"
+    - "sales by product"
+  keywords:
+    - "product"
+    - "product-wise"
+    - "for coils"
+    - "for tmt"
+    - "for bars"
+  phrases:
+    - "top dealers for"
+    - "sales by product"
+    - "dealers for"
+    - "product sales"
+  regex:
+    - "(?:for|of)\\s+([a-z\\s]+?)(?:\\s+dealers|\\s+sales|\\?|$)"
+    - "top\\s+\\d+\\s+dealers\\s+for"
+
+RISK_ANALYSIS:
+  exact: []
+  keywords:
+    - "risk"
+    - "overdue"
+    - "at risk"
+    - "struggling"
+    - "underperforming"
+  phrases:
+    - "dealers at risk"
+    - "overdue payments"
+    - "at risk dealers"
+    - "dealers with overdue"
+  regex:
+    - "dealers\\s+(?:at\\s+)?risk"
+    - "overdue\\s+(?:\\d+\\s+)?days?"
+    - "overdue\\s+payments"
+
+DASHBOARD:
+  exact: []
+  keywords:
+    - "dashboard"
+    - "summary"
+    - "overview"
+    - "summary statistics"
+  phrases:
+    - "sales dashboard"
+    - "quick summary"
+    - "overall performance"
+  regex:
+    - "(?:show|display)\\s+dashboard"
+    - "(?:quick\\s+)?summary"
+
+ANALYTICS:
+  exact: []
+  keywords:
+    - "trend"
+    - "average"
+    - "total"
+    - "analysis"
+    - "analytics"
+    - "insights"
+  phrases:
+    - "sales trend"
+    - "year to date"
+    - "last quarter"
+    - "last month"
+  regex:
+    - "average\\s+\\w+\\s+by"
+    - "total\\s+\\w+\\s+by"

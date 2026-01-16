@@ -1,0 +1,10 @@
+{"timestamp": "2026-01-16T15:15:46.007045", "user_message": "Dealer balaji", "intent": "SNAPSHOT", "response": "Did you mean:\n- BALAJI STEEL CORPORATION\n- SRI BALAJI AGENCIES\n- SRI SAI BALAJI AGENCIES\n- SRI BALAJ"}
+{"timestamp": "2026-01-16T15:16:14.892539", "user_message": "Balaji steel corporation snapshot", "intent": "SNAPSHOT", "response": "Which dealer would you like to check?"}
+{"timestamp": "2026-01-16T15:16:31.734938", "user_message": "Sri Balaji agencies", "intent": "ANALYTICS", "response": "I can help with analytics questions such as:\n\u2022 Dealer performance\n\u2022 Sales trends\n\u2022 Comparisons and s"}
+{"timestamp": "2026-01-16T15:25:07.811786", "user_message": "Dealer balaji", "intent": "SNAPSHOT", "response": "Did you mean:\n1\ufe0f\u20e3 BALAJI STEEL CORPORATION\n2\ufe0f\u20e3 SRI BALAJI AGENCIES\n3\ufe0f\u20e3 SRI SAI BALAJI AGENCIES\n4\ufe0f\u20e3 S"}
+{"timestamp": "2026-01-16T15:25:21.151958", "user_message": "1 snapshot", "intent": "SNAPSHOT", "response": "Which dealer would you like to check?"}
+{"timestamp": "2026-01-16T15:25:33.573585", "user_message": "2", "intent": "COMPARE", "response": "Please tell me which dealers to compare (e.g. *Dealer A vs Dealer B*)."}
+{"timestamp": "2026-01-16T15:25:46.941357", "user_message": "3", "intent": "TOP_DEALERS", "response": "Could not retrieve top dealers."}
+{"timestamp": "2026-01-16T15:35:22.702944", "user_message": "dealer balaji", "intent": "SNAPSHOT", "response": "Did you mean:\n1\ufe0f\u20e3 BALAJI STEEL CORPORATION\n2\ufe0f\u20e3 SRI BALAJI AGENCIES\n3\ufe0f\u20e3 SRI SAI BALAJI AGENCIES\n4\ufe0f\u20e3 S"}
+{"timestamp": "2026-01-16T15:35:36.958449", "user_message": "1", "intent": "SNAPSHOT", "response": "Did you mean:\n1\ufe0f\u20e3 SRI BALAJI AGENCIES\n2\ufe0f\u20e3 SRI BALAJI AGENCIES(B)\n\n\ud83d\udccc Reply with the number (e.g., 1, "}
+{"timestamp": "2026-01-16T15:37:01.272181", "user_message": "top 5 dealers for tmt", "intent": "PRODUCT", "response": "Did you mean:\n1\ufe0f\u20e3 TMT WELDMESH 12 MM FE500 \u2013 200 X 110 MM ( 6 MTR X 2.4 MTR)\n2\ufe0f\u20e3 TMT WELDMESH 08 MM "}
